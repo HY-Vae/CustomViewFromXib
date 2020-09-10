@@ -14,6 +14,11 @@
 		889E3F1F250A0DA90056740B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889E3F1E250A0DA90056740B /* Assets.xcassets */; };
 		889E3F22250A0DA90056740B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889E3F20250A0DA90056740B /* LaunchScreen.storyboard */; };
 		889E3F25250A0DA90056740B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 889E3F24250A0DA90056740B /* main.m */; };
+		889E3F2E250A0DDC0056740B /* MyCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889E3F2B250A0DDB0056740B /* MyCustomView.m */; };
+		889E3F2F250A0DDC0056740B /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889E3F2D250A0DDC0056740B /* MyCustomView.xib */; };
+		889E3F34250A0E860056740B /* BaseXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889E3F33250A0E860056740B /* BaseXibView.m */; };
+		889E3F37250A0E980056740B /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 889E3F36250A0E980056740B /* MyView.m */; };
+		889E3F39250A0EA30056740B /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889E3F38250A0EA30056740B /* MyView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,14 @@
 		889E3F21250A0DA90056740B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		889E3F23250A0DA90056740B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889E3F24250A0DA90056740B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		889E3F2B250A0DDB0056740B /* MyCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomView.m; sourceTree = "<group>"; };
+		889E3F2C250A0DDB0056740B /* MyCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomView.h; sourceTree = "<group>"; };
+		889E3F2D250A0DDC0056740B /* MyCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
+		889E3F32250A0E860056740B /* BaseXibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXibView.h; sourceTree = "<group>"; };
+		889E3F33250A0E860056740B /* BaseXibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXibView.m; sourceTree = "<group>"; };
+		889E3F35250A0E980056740B /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		889E3F36250A0E980056740B /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		889E3F38250A0EA30056740B /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,8 @@
 		889E3F11250A0DA80056740B /* CustomViewFromXib */ = {
 			isa = PBXGroup;
 			children = (
+				889E3F31250A0E730056740B /* 优化 */,
+				889E3F30250A0DE50056740B /* CustomView */,
 				889E3F12250A0DA80056740B /* AppDelegate.h */,
 				889E3F13250A0DA80056740B /* AppDelegate.m */,
 				889E3F15250A0DA80056740B /* SceneDelegate.h */,
@@ -74,6 +89,28 @@
 				889E3F24250A0DA90056740B /* main.m */,
 			);
 			path = CustomViewFromXib;
+			sourceTree = "<group>";
+		};
+		889E3F30250A0DE50056740B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				889E3F2C250A0DDB0056740B /* MyCustomView.h */,
+				889E3F2B250A0DDB0056740B /* MyCustomView.m */,
+				889E3F2D250A0DDC0056740B /* MyCustomView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		889E3F31250A0E730056740B /* 优化 */ = {
+			isa = PBXGroup;
+			children = (
+				889E3F32250A0E860056740B /* BaseXibView.h */,
+				889E3F33250A0E860056740B /* BaseXibView.m */,
+				889E3F35250A0E980056740B /* MyView.h */,
+				889E3F36250A0E980056740B /* MyView.m */,
+				889E3F38250A0EA30056740B /* MyView.xib */,
+			);
+			name = "优化";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				889E3F22250A0DA90056740B /* LaunchScreen.storyboard in Resources */,
+				889E3F2F250A0DDC0056740B /* MyCustomView.xib in Resources */,
 				889E3F1F250A0DA90056740B /* Assets.xcassets in Resources */,
+				889E3F39250A0EA30056740B /* MyView.xib in Resources */,
 				889E3F1D250A0DA80056740B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +188,10 @@
 				889E3F1A250A0DA80056740B /* ViewController.m in Sources */,
 				889E3F14250A0DA80056740B /* AppDelegate.m in Sources */,
 				889E3F25250A0DA90056740B /* main.m in Sources */,
+				889E3F34250A0E860056740B /* BaseXibView.m in Sources */,
+				889E3F2E250A0DDC0056740B /* MyCustomView.m in Sources */,
 				889E3F17250A0DA80056740B /* SceneDelegate.m in Sources */,
+				889E3F37250A0E980056740B /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
